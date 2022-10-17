@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+html,
+body {
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+
+}
+
+/*
+Навигация
+*/
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__item {
+  padding: 20px;
+}
+
+.navigation__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation_link--active {
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
+
+/* Кнопки (могут быть сделаны из ссылок) */
+
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: #000;
+  border-radius: 4px;
+}
+
+.button--theme-brow {
+  background: #756157;
+}
+
+.button--theme-blue {
+  background: #82B3D3;
+}
+
+.button--theme-green {
+  background: #82B3D3;
+}
+
+.button--theme-transparent {
+  background: none;
+}
+
+.main-hero {
+  text-align: center;
+  background-color: #000;
+  background: url("../images/main-hero_decor.svg") no-repeat bottom, url("../images/main-hero__bg.jpeg") no-repeat center;
+  background-size: contain, cover;
+}
+
+.main-hero__img {
+
+}
+
+.advantages__item {
+  max-width: 230px;
+  text-align: center;
+}
+
+.advantages__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  color: #333333;
+  text-align: center;
+}
+
+.advantages__item--bg-second-1 {
+  background: #EFF6FA;
+}
+
+.advantages__item--bg-second-2 {
+  background: #E4F0F7;
+}
+
+.advantages__item--bg-basic-3 {
+  background: #82B3D3;
+}
+
+/** CTA Banner section **/
+.cta-banner {
+  text-align: center;
+}
+
+.cta-banner__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.cta-banner__description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/** Subscribe section **/
+.subscribe {
+  text-align: center;
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.subscribe__description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.subscribe__form {
+
+}
+
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.subscribe--withBg {
+  background: #000 url("../images/subscribe_bg.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.subscribe--withBg .subscribe__title ,
+.subscribe--withBg .subscribe__description {
+  color: #FFFFFF;
+}
+
+
+/** Catalog page **/
+
+.catalog-header {
+  background: #000 url("../images/catalog/catalog-header_bg.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+.catalog-header {
+
+}
+
+.header-catalog__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style-type: none;
+  color: #FFFFFF;
+}
+
+.breadcrumbs__item {
+  display: inline;
+}
+
+.breadcrumbs__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/** Фильтры **/
+
+.filter {
+
+}
+
+.filter__caption {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.filter__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+
+.catalog__search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+
+}
+
+.select-control option {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog__card-lists {
+
+}
+
+/** Карточка каталога **/
+
+.card {
+  display: inline-block;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.card__rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__category {
+  font-weight: 400;
+  color: #333333;
+}
+
+.card__price {
+  font-weight: 400;
+  text-align: right;
+  color: #333333;
+}
+
+/** Pagination **/
+
+.pagination {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagination__item {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination__item--points {
+  background: transparent;
+}
+.pagination__item--points a {
+  color: #000000;
+}
+
+.pagination__link {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.pagination__link--current {
+  color: #000000;
+}
